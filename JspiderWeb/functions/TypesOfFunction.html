@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Types of functions</h1>
+    <pre>
+    <p>
+        There are two types of functions in JavaScript:
+        <ol>
+            <li><mark>Named functions</mark></li>
+            <p>Functions which is declared with function keyword and have a indentifier name is called as 
+                named function
+            <p>
+                function demo(){
+                    console.log("I am a named function")
+                }
+                
+                demo();
+            </p>
+            </p>
+            <hr>
+            <li><mark>Anonymous functions</mark></li>
+            <p>Functions which  does not have any identifier  name is called as 
+                Anonymous function
+            <p>
+                let fun=function(){
+                    
+                    console.log("I am a Anonymous function")
+                }
+                
+                fun();
+            </p>
+            </p>
+            <hr>
+
+            <li><mark>Function with expression</mark></li>
+            <p>
+                Expression of storing a function inside a variable is called as function expression.
+                whenever we store a function inside a variable we cannot call that function with the function identifier ,we can only call it with the help of variable identifier.
+
+            <p>
+                let a=function sum(a,b){
+                    console.log(a+b);
+                }
+                sum()//uncought reference error
+                
+
+                a(10,20);
+            </p>
+            </p>
+            <hr>
+
+                     
+            <li><mark>First Class functions</mark></li>
+            <p>Functions which  is stored  as a  value insode a variable is called as First Class functions.
+            
+        <hr>
+
+            <li><mark>Higher Order functions</mark></li>
+            <p>Functions which  accept another   function as arguments or it 
+                return a function  called as Higher Order function
+            <p>
+                function fum(a,b,c)
+                {
+                    a(b,c);
+                }
+                
+                <p>Here the function is accepting sum as argument so in this case fun is the 
+                    higher order function.
+                </p>
+                <p>
+               fun(sum,20,10);
+               fun(sub,20,10);
+               fun(multiply,20,10); 
+               fun(divide,20,10);
+            </p>
+            <p>
+                fun(function(p1,p1)
+                {
+                    
+                    console.log(p1+p2);
+                    
+                },20,10);
+                
+            </p>
+            <p>
+                function sum(a,b){
+                    console.log(a+b);
+                }
+                function sub(a,b){
+                    console.log(a-b);
+                }
+                
+                function multiply(a,b){
+                    console.log(a*b);
+                }
+                
+                function divide(a,b){
+                    console.log(a/b);
+                }
+                
+            </p>
+            </p>
+            </p>
+            <hr>
+            <li><mark>CallBack  functions</mark></li>
+            <p>Functions which  is passed   as the   argument to another  function is called as CalBack  functions.</p>
+            <hr>
+
+
+            <li><mark>Immediately Invoked Function Expression</mark></li>
+            <p>
+                It can be executed once only, we can't store this function but we can store the returned value of the function.
+
+            <p>
+                (function demo(p1,p2){
+                      console.log("hey first function");
+                     console.log(p1+p2);
+                     }),(1,2);
+                    
+            </p>
+            <p>
+                
+                (function(p1,p2){
+                console.log("hey second function")
+                 console.log(p1+p2)
+                }),(20,10);
+                    
+            </p>
+           
+            </p>
+
+
+            <li><mark> Arrow function</mark></li>
+            <p>
+                <p>
+                    let fun =(()=>{
+                         console.log("Hey I am arrow function")
+                          return 10;
+                       })();
+                        console.log(fun);
+                        
+                </p>
+
+        
+            
+            </p>
+
+           <hr>
+           <li><mark>Nested function</mark></li>
+               <p>
+                debugger;
+                outer();
+                 function outer(){
+                     console.log("I am outer function");
+                     function inner(){
+                         console.log("I am inner function")
+                     }
+                     inner();
+                }
+                       
+               </p>
+            
+
+        </ul>
+    </p>
+
+</pre>
+</body>
+</html>
