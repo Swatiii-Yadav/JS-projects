@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Survey Form</title>
+
+    <style>
+        form{
+            border: 2px solid black;
+            padding: 20px;
+            width: 40%;
+            margin-left: 30%;
+        }
+        header{
+    
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h4 id="header">Survey Form</h4>
+   
+    <form action="SubmitedFormDetails.html" method="">
+      
+        <div>
+        <label for="name">
+            Name
+        </label>
+        <input type="text" name="name" placeholder="Enter your name" required autocomplete="name">
+    </div>
+<br>
+    <div>
+        <label for="name">
+            Email
+        </label>
+        <input type="email" name="email" placeholder=" Enter your Username" required autocomplete="email">
+    </div>
+<br>
+    <div>
+        <label for="age">
+            Age
+        </label>
+        <input type="text" name=" age" placeholder="Enter your age" autocomplete="age" >
+    </div>
+
+    <br>
+    
+    <div>
+        <label for="occupation">
+         Which option describe you best?
+        </label>
+       <select name="occupation" >
+        <option>Student </option>
+        <option>Intern </option>
+        <option>Professional</option>
+        <option>Other</option>
+       </select>
+    </label>
+</div>
+<br>
+    <div>
+        <label for="language Konow">
+         Which Web Technology  do you know?
+        </label>
+        <br>
+      <input type="checkbox" name="language" value="HTML">HTML
+      <br>
+      <input type="checkbox" name="language" value="HTML">CSS
+      <br>
+      <input type="checkbox" name="language" value="HTML">JavaScript
+      <br>
+      <input type="checkbox" name="language" value="HTML">React
+      <br>
+      <input type="checkbox" name="language" value="HTML">Angular
+      <br>
+      <input type="checkbox" name="language" value="HTML">Vue
+      <br>
+      <input type="checkbox" name="language" value="HTML"> Node.js
+
+
+    </label>
+    </div>
+    <div>
+        <label for="Feedback">
+            Feedback or Comment
+        </label>
+        <br>
+       <textarea name="" id="" placeholder="Comment your Feedback"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

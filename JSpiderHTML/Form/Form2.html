@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+
+            <legend>Other Info</legend>
+            <label for="skills">
+                Skills:</label>
+            <input type="checkbox" name="skill" value="html" checked>HTML
+            <input type="checkbox" name="skill" value="css">CSS
+            <input type="checkbox" name="skill" value="js">JS
+            <br><br>
+            <label for="">Date Of Interview</label>
+            <input type="date">
+            <br><br>
+            <label for="">Month Of Interview</label>
+            <input type="month">
+            <br><br>
+            <label for="">Date And Time</label>
+            <input type="datetime">
+            <br><br>
+            <label for="">Date And Time Local</label>
+            <input type="datetime-local">
+            <br><br>
+            <label for="">Time Of Interview</label>
+            <input type="time">
+            <br><br>
+            <label for="vehicle">Vehicle
+                
+            <select name="vehicle" id="vehicle" multiple>
+               
+            <option value="no vehicle">Select Vehicle</option>
+            <optgroup label="Cars">
+                <option value="BMW">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="supra">Supra</option>
+            </optgroup>
+            <optgroup label="bikes">
+                <option value="jawa">Jawa</option>
+                <option value="splendor">splendor</option>
+                <option value="shine">shine</option>
+            </optgroup>
+            <optgroup label="cycles">
+                <option value="Atlas">Atlas</option>
+                <option value="Atlas">Atlas</option>
+                <option value="Hero" selected>Hero</option>
+                <option value="Hercules">Hercules</option>
+            </optgroup>
+            </select>
+        </label>
+            <br><br>
+            <label for="state">Select State</label>
+            <input  list="states">
+            <datalist id="states">
+                <select name="states" id="states">
+                    <option value="">Select a State</option>
+                    <option value="andhra_pradesh">Andhra Pradesh</option>
+                    <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                    <option value="assam">Assam</option>
+                    <option value="bihar">Bihar</option>
+                    <option value="chhattisgarh">Chhattisgarh</option>
+                    <option value="goa">Goa</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="haryana">Haryana</option>
+                    <option value="himachal pradesh">Himachal  Pradesh</option>
+                    <option value="jharkhand">Jharkhand</option>
+                    <option value="karnataka">Karnataka</option>
+                    <option value="kerala">Kerala</option>
+                    <option value="madhya_pradesh">Madhya Pradesh</option>
+                    <option value="maharashtra">Maharashtra</option>
+                    <option value="manipur">Manipur</option>
+                    <option value="meghalaya">Meghalaya</option>
+                    <option value="mizoram">Mizoram</option>
+                    <option value="nagaland">Nagaland</option>
+                    <option value="odisha">Odisha</option>
+                    <option value="punjab">Punjab</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="sikkim">Sikkim</option>
+                    <option value="tamil_nadu">Tamil Nadu</option>
+                    <option value="telangana">Telangana</option>
+                    <option value="tripura">Tripura</option>
+                    <option value="uttar_pradesh">Uttar Pradesh</option>
+                    <option value="uttarakhand">Uttarakhand</option>
+                    <option value="west_bengal">West Bengal</option>
+                </select>
+                
+            </datalist>
+            <br><br>
+            <label for="yoe">Year Of Experience</label>
+            <input type="range" id="yoe" step="2" min="2" max="10" name="yoe" value="4">
+            <br><br>
+            <label for="">URL</label>
+            <input type="url">
+            <br><br>
+            <label for="">Upload Resume</label>
+            <input type="file" multiple 
+            accept=".pdf , .jpeg">
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Comments and Address</legend>
+         <label for="">Address</label>
+         <textarea  id="" name="address"></textarea>
+        </fieldset>
+        <br><br>
+        <button type="button">    
+            </fieldset>
+    
+    </form>
+</body>
+</html>
