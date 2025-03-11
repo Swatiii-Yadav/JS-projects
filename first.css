@@ -1,0 +1,29 @@
+
+/* #p1{
+    background-color: yellowgreen;
+}
+#s1{
+    background-color: crimson;
+}
+    /* class selector */
+.c1{
+    background-color: darkorange;
+} 
+/* specificity val  of tag name is least */
+div{
+    background-color: blueviolet;
+}
+/* specificity val  of id  is most */
+#div1{
+    background-color: rgb(110, 226, 43);
+}
+/* specificity val  of class name is less than id and more than tag name */
+.classDiv{
+    background-color: blue;
+}
+
+/*  Universal selector */
+/* *{
+background-color: gray;
+color: beige;
+} */
