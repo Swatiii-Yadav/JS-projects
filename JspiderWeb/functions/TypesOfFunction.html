@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <h1>Types of functions</h1>
@@ -139,10 +141,10 @@
             <li><mark> Arrow function</mark></li>
             <p>
                 <p>
-                    let fun =(()=>{
+                    let fun =(a)=>{
                          console.log("Hey I am arrow function")
                           return 10;
-                       })();
+                       }();
                         console.log(fun);
                         
                 </p>
@@ -152,24 +154,37 @@
             </p>
 
            <hr>
-           <li><mark>Nested function</mark></li>
-               <p>
-                debugger;
-                outer();
-                 function outer(){
-                     console.log("I am outer function");
-                     function inner(){
-                         console.log("I am inner function")
-                     }
-                     inner();
-                }
-                       
-               </p>
+         
             
+               <p><li><mark>argument function</mark></li>
+                function details(){
+                    return `${arguments[0]}-${arguments[1]}`;
+                  
+                }
+               let res=details("swarthi",22);
+               console.log(res) ;
 
+
+
+               </p>
+<hr>
+<li><mark>Nested function</mark></li>
+<p>
+ debugger;
+ outer();
+  function outer(){
+      console.log("I am outer function");
+      function inner(){
+          console.log("I am inner function")
+      }
+      inner();
+ }</p>
+ <hr >                      
+ </p>    
         </ul>
     </p>
 
 </pre>
 </body>
+
 </html>
