@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="" autocomplete="off" novalidate>
+         <fieldset style="background-color: bisque;">
+            <legend>Personal Information</legend>
+
+            <label>Company</label>
+            <input type="text" value="Google" readonly disabled>
+            <br>
+            <br>
+        <label for="user">Name</label>
+        <input type="text" id="user" name="name" minlength="3" maxlength="50" pattern="[a-zA-Z ]{10,}" placeholder="Enter your full name">
+         <br>
+         <br>
+        <label for="user">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required autofocus autocomplete="off">
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="email" name="email" required>
+        <br>
+        <br>
+        <label for="user">Age</label>
+        <input type="number" id="number" name="Age" min="16" max="40" step="2">
+        <br>
+        <br>
+        <label>Phone Number </label>
+        <input type="tel" pattern="[0-9]{10}">
+        <br>
+        <br>
+        <label>Male</label>
+        <input type="radio" name="male" value="gender">Male
+        <input type="radio" name="male" value="gender">Female
+        <input type="radio" name="Other" value="gender">Other
+      </fieldset>
+       <br>
+
+       <fieldset style="background-color: rgb(254, 216, 169);">
+        <legend>Other Info</legend>
+        <label for="skill">Skills</label>
+        <input type="checkbox" name="skill" value="html" checked>HTML
+        <input type="checkbox" name="skill" value="css">CSS
+        <input type="checkbox" name="skill" value="js">JAVASCRIPT
+        <input type="checkbox" name="skill" value="java">JAVA
+        <br>
+        <label for="vechicle">vechicle</label>
+        <select namre="vechicle" id="vechicle" multiple>
+            <option value="no vechicle"> Select vechicle</option>
+                <optgroup label="cars">
+                     <option value="Bmw">BMW</option>
+                     <option value="audi">Audi</option>
+                     <option value="mercedes">Mercedes</option>
+                </optgroup>
+
+                <optgroup label="Bike">
+                    <option value="jawa">Jawa</option>
+                    <option value="hero">HERO</option>
+                    <option value="splen">splender</option>
+               </optgroup>
+
+               <optgroup label="cars">
+                <option value="Bmw">BMW</option>
+                <option value="Bmw">BMW</option>
+                <option value="Bmw">BMW</option>
+           </optgroup>
+           
+        </select>
+
+        <label>State</label>
+        <input type="text" list="state">
+        <datalist id="state">
+            <option value="Delhi">Delhi</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+        </datalist>
+    </fieldset>
+    <br>
+    <fieldset style="background-color: rgb(255, 212, 160);">
+        <legend>Comments and Address</legend>
+        <textarea cols="20" id="">Address</textarea><br>
+        <textarea cols="100">Comments</textarea>
+    </fieldset>
+
+         <br>
+        <button type="submit">Submit</button>
+    </form>
+    <!---<a href="../folder/img2.jpg" download="nature">
+        <img src="../folder/img2.jpg"
+    </a>-->
+</body>
+</html>

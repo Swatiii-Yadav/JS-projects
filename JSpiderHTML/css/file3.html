@@ -1,0 +1,127 @@
+blueviolet;
+    color: brown;
+}  */
+/*  ! universal selector (*) ---------------------------------------------------------------------*/
+/* *{
+    background-color: black;
+    color: white;
+} */
+
+/* ! specificity value -------------------------------------------------------------------------*/
+/* Whenever we use more than one selector for the same element than the styles will be provided according to the specificity value */
+/* #first{
+    background-color: red;
+}
+/* .demo{
+    background-color: yellow;
+} */
+/* div{
+    background-color: blue;
+}
+div{
+    background-color: green;
+}
+
+div.demo{
+    background-color: pink;
+}
+div#first{
+    background-color: blueviolet;
+}
+div#first.demo{
+    background-color: bisque;
+} */ 
+/* 
+.demo.demo1.demo2{
+    background-color: aquamarine;
+} */
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./combinator.css">
+</head>
+<body>
+    
+    <!-- <section>
+        section
+        <aside>aside
+            <div>div</div>
+            <article>article 2</article>
+        </aside>
+        <article>article 1</article>
+        <main>main
+            <article>article 3</article>
+        </main>
+    </section>
+    <div>
+        section
+        <aside>aside
+            <div>div</div>
+            <article>article 2</article>
+        </aside>
+        <article>article 1</article>
+        <main>main
+            <article>article 3</article>
+        </main>
+    </div> -->
+    <ul>
+        <li>list-item-1</li>
+        <li>list-item-2</li>
+        <ol>
+            <li>nested-item-1</li>
+            <li>nested-item-2</li>
+            <ul>
+                <li>nested2.1</li>
+                <li>nested2.2</li>
+            </ul>
+            <li>nested-item-3</li>
+            <li>nested-item-4</li>
+        </ol>
+        <li>list-item-3</li>
+        <li>list-item-4</li>
+    </ul>
+    <ol>
+        <li>list-ordered-1</li>
+        <li>list-ordered-2</li>
+        <li>list-ordered-3</li>
+        <li>list-ordered-4</li>
+    </ol>
+</body>
+</html>
+
+
+
+/* article{
+    background-color: green;
+} */
+
+/* ! descendent selector */
+/* selecting all the article which are descendent of the section and applying yellow background color */
+/* section article{
+     background-color: yellow;
+} */
+/* selecting all the article which are descendent of the div and applying green background color */
+/* div article{
+    background-color: green;
+} */
+
+/* ! child selector (>)------------------------------------------------ */
+ul>li{
+    background-color: yellow;
+}
+ul ol>li{
+    background-color: red;
+}
+ul ol ul>li{
+    background-color: blue;
+}
