@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Choose Skills</legend>
+        <label>Frontend skill</label>
+        <select name="frontend" id="skill">
+            <option value="no skills"> Select skill</option>
+                     <option value="HTMl">HTML</option>
+                     <option value="CSS">CSS</option>
+                     <option value="js" selected> javaScript</option>
+                     <option value="react">Reactjs</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label>Backend skill</label>
+        <select name="Backend" id="skill2">
+            <option value="no skills"> Select skill</option>
+                     <option value="NodeJs">Node Js</option>
+                     <option value="Express" selected>Express js</option>
+                     <option value="hibernate">Hibernate</option>
+                     <option value="django">Django</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Other fields</legend>
+
+        <label>State</label>
+        <input type="text" list="state">
+        <datalist id="state">
+            <option value="Delhi">Delhi</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="bihar">Bihar</option>
+            <option value="Jharkhand">Maharastra</option>
+            <option value="Kerala">Kerala</option>
+            <option value="jummu">Jammu and Kashmir</option>
+            <option value="UP">UP</option>
+            <option value="mp">MP</option>
+            <option value="Uk">Uttrakhand</option>
+            <option value="Himachal">Himachal Pradesh</option>
+            <option value="Arunachal">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="chattisgarh">Chattishgarh</option>
+            <option value="tm">Tamil Nadu</option>
+            <option value="Ap">Andra Pradesh</option>
+
+        </datalist>
+        <br>
+        <input type="radio" name="work" >Students
+        <input type="radio" name="work">Working
+        <input type="radio" name="work">Graduate
+    </fieldset>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
