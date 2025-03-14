@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: none;
+        }
+        #check:checked~div{
+        
+            background-color: blueviolet;
+        }
+        #check:checked~p{
+           
+            background-color: aqua;
+        }
+        #check:checked+section{
+            display: block;
+            height: 400px;
+            width: 500px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <label for="">Check</label>
+        <input type="checkbox"  id="check">
+<section >
+   
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga libero amet quam unde! Cupiditate animi perspiciatis natus distinctio porro commodi debitis, nemo quasi aliquam voluptatum. Non ea quibusdam nobis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit alias omnis molestias dolorum dolore nobis dolores quibusdam exercitationem nemo, ducimus veniam natus fugit earum nihil mollitia inventore asperiores qui.
+            
+</section>
+        <!-- <div id="check" >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fuga libero amet quam unde! Cupiditate animi perspiciatis natus distinctio porro commodi debitis, nemo quasi aliquam voluptatum. Non ea quibusdam nobis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit alias omnis molestias dolorum dolore nobis dolores quibusdam exercitationem nemo, ducimus veniam natus fugit earum nihil mollitia inventore asperiores qui.
+        </div> -->
+        <p id="check">I am para</p>
+</body>
+</html>

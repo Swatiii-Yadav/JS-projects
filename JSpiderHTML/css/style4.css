@@ -1,0 +1,44 @@
+/*! right most sibling*/
+/* ? adjacent sibling selector(+)*/
+/*
+div+p{
+    background-color: brown;
+}*/
+/*? general selector (~)*/
+/*
+div~p{
+    background-color: aqua;
+}*/
+/*! pesudo class Selector */
+/*
+div{
+    width: 200px;
+    height: 400px;
+    background-color: red;
+}
+div:hover{
+    background-color: aqua;
+    width: 500px;
+    border-radius: 45%;
+} */
+ li{
+    list-style: none;
+    text-align: center;
+ }
+li:first-child{
+    background-color: yellow;
+    height: 30px;
+}
+li:last-child{
+    background-color: yellowgreen;
+    height: 30px;
+}
+div:last-child{
+    background-color: blue;
+}
+li:nth-child(2n){
+    background-color: aqua;
+}
+li:nth-child(2n-1){
+    background-color: rgb(255, 255, 0);
+}
