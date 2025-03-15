@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <strong><mark>this</mark></strong>
+ <p>this keyword if used globally  points to global object window
+ if we ue this keyword inside a function that will point to the parent object (window).</p>
+ <p>
+ console.log(this)    <br>
+ console.log(window)<br>
+ function fun(){<br>
+     console.log(this)<br>
+}</p>
+<p>fun()       
+ <i>this inside a method will point to the parent object -->(obj in this example)</i><br>
+<br>
+ <p>let obj = {          <br>
+     pname:"Virat" , <br>
+     team:"RCB",<br>
+     details:function(){<br>
+         console.log(`the name is ${this.pname} - ${this.team} `)
+     }<br>
+ }<br>
+ console.log(obj)<br>
+ obj.details()</p>
+</p>
+
+<p> this inside the method as arrow function
+ arrow function doesn't have this keyword of its own so it will borrow this keyword from its parent ()</p><br>
+ let obj = {                                                                     <br>
+     v:this, // here this is pointing to the window<br>
+     pname:"Virat" , <br>
+     team:"RCB",<br>
+     details:()=>{<br>
+         console.log(this)<br>
+         // console.log(`the name is ${this.pname} - ${this.team} `)<br>
+     },<br>
+     details1:function(){<br>
+         console.log(this) // here this is pointing to obj<br>
+         // console.log(`the name is ${this.pname} - ${this.team} `)<br>
+     }<br>
+ }<br>
+ obj.details()<br>
+ obj.details1()<br>
+
+
+
+</body>
+</html>
