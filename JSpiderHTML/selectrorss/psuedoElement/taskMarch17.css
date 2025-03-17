@@ -1,0 +1,27 @@
+img[class] {
+    display: none;
+
+    height: 50px;
+    width: 50px;
+}
+.check:checked~img{
+    display: block;
+
+}
+
+tr:nth-child(odd) .check:checked ~h5::before {
+    content: 'Miss ';
+
+
+}
+tr:nth-child(even) .check:checked ~h5::before {
+    content: 'Mr.';
+
+
+}
+
+.check:checked ~h6::after {
+    content: '@gmail.com';
+
+
+}

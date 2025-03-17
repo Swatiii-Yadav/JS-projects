@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 40px 60px;
+        }
+        img{
+            display: none;
+        }       
+        #LightOn:checked+img{
+            display: block;
+        }
+        #LightOff:checked+img{
+           display:block;
+        }
+        
+    </style>
+
 </head>
 <body>
-    <input type="radio"> Light On
-    <input type="radio"> Light Off
+    <input type="radio" name=" on" id="LightOn"> Light On
+    <img src="bulbOn.png" width="300px">
+    <input type="radio"  name=" on" id="LightOff"> Light Off
+    <img src="bulbOff.png" width="300px">
 </body>
 </html>
