@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            background-color: rgb(216, 96, 45);
+        }
+        p::first-letter{
+            font-size: xx-large;
+            background-color: red;
+
+        }
+        h1::before{
+            content: "The ";
+        }
+        h1::after{
+content: "🤡👽🥚";
+        }
+        p{
+           user-select: none;
+        }
+        li:nth-child(odd)::marker{
+            content: '🐮';
+            font-size: 30px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <center>  <h1> Media </h1></center>
+    <ul>
+        <li>list-item 1</li>
+        <li>list-item 2</li>
+        <li>list-item 3</li>
+        <li>list-item 4</li>
+        <li>list-item 5</li>
+        <li>list-item 6</li>
+        <li>list-item 7</li>
+        <li>list-item 8</li>        
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corporis nisi suscipit vel magnam et tempore optio ut beatae vero dolorem cupiditate officiis neque accusantium excepturi dicta, culpa reiciendis asperiores?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi fugit esse officia beatae culpa porro doloremque similique, voluptatibus totam eligendi minus vero laborum placeat sit. Laudantium temporibus facere suscipit ad.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad explicabo officia tenetur sint delectus obcaecati consequatur, illo quam molestiae veniam nesciunt cum odio itaque quidem rem tempora ipsum ipsam.
+    </p>
+</body>
+</html>
