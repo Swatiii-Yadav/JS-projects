@@ -1,0 +1,53 @@
+ /* <!-- add shadow property --> */
+ #ShadowCheck1:checked ~ #content { 
+    text-shadow: 10px -10px 5px yellow; 
+}
+  #ShadowCheck2:checked ~ #content {
+    text-shadow: -10px 10px 5px blue;
+  }
+  #ShadowCheck3:checked ~ #content {
+    text-shadow: 10px 10px 5px red;
+  }
+
+  /* <!-- add case property --> */
+  #case1:checked~#content {
+    text-transform: uppercase;
+  }
+  #case2:checked ~ #content {
+    text-transform: lowercase;
+  }
+  #case3:checked ~ #content {
+    text-transform: capitalize;
+  }
+
+  /* <!-- add space property --> */
+  #space1:checked ~ #content {
+    word-spacing: 20px;
+  }
+  #space2:checked ~ #content {
+    letter-spacing: 50px;
+  }
+  /* <!-- add decoration property --> */
+  #decor1:checked ~ #content {
+    text-decoration: overline;
+  }
+  #decor2:checked ~ #content {
+    text-decoration: underline;
+  }
+  #decor3:checked ~ #content {
+    text-decoration: line-through;
+  }
+  /* <!-- add style property --> */
+
+  #style1:checked ~ #content {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+  }
+  #style2:checked ~ #content {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+  }
+  #style3:checked ~ #content {
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+  }
