@@ -1,0 +1,27 @@
+
+        .scroll-section {
+            height: 100vh;
+            background-size: 400px 400px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #section0{
+            background-image: url('./office.png');
+        }
+        
+        #section1 {
+            background-image: url("./Michael.png");
+        }
+        
+        #section2 {
+            background-image: url("./jim.png");
+        }
+        
+        #section3 {
+            background-image: url("./dwight.png");
+        }
+        #section4 {
+            background-image: url("./pam.png");
+        }
+    
