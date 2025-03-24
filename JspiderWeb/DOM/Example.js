@@ -57,8 +57,20 @@ console.log(sec1.textContent);
 
 // ? III. create 
 // document.CreateElement('tagName')
-let img=document.createElement('img');
-img.src="image4.png";
+// let img=document.createElement('img');
+// img.src="image4.png";
 
-let body=document.body;
-body.append(img);
+// let body=document.body;
+// body.append(img);
+//create element //append() // prepend() //appendChild()
+let h1=document.createElement('hi');
+h1.innerText="Hello i am created using DOM."
+// let body =document.body;
+body.append("Hello hii how aree you");
+// body.prepend(h1); //add as first child
+// body.append(h1); //add as last child
+//  body.appendChild(h1);
+
+
+let body =document.body;
+body.innerText+=append("ROHIT Sharma")

@@ -32,7 +32,7 @@ let indian_players = [
 let body = document.body;
 let ul = document.createElement('ul')
 ul.style.type = "none"
-body.appendChild(ul);
+document.body.appendChild(ul);
 indian_players.forEach((el , i)=>{
     let li = document.createElement('li');
     li.innerText = el;
