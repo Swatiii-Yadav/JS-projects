@@ -8,9 +8,19 @@
         table{
             height: 300px;
             width: 300px;
+            height: 100px;
+            font-size: larger;
+            font-weight: bolder;
+            text-align: center;
+            border-collapse: collapse;
+            
         }
         td{
             color: transparent;
+        }
+        td:hover{
+            color: whitesmoke;
+            border-radius: 40%;
         }
      
       tr:nth-child(1)>td:nth-child(1){
@@ -23,14 +33,14 @@
             background-color: rgb(24, 171, 190);
         }
         tr:nth-child(1)>td:nth-child(4){
-            background-color: rgb(0, 255, 229);
+            background-color: rgb(10, 87, 79);
         }
 
         tr:nth-child(2)>td:nth-child(1){
             background-color:rgb(126, 13, 84);
         }
         tr:nth-child(2)>td:nth-child(2){
-            background-color:#00f;
+            background-color:rgb(189, 172, 216);
         }
         tr:nth-child(2)>td:nth-child(3){
             background-color:rgb(46, 5, 47);
@@ -67,30 +77,31 @@
 <body>
     <table border="">
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td> rgb(0, 0, 255);</td>
+            <td> rgb(255, 0, 93);</td>
+            <td>rgb(24, 171, 190);</td>
+            <td> rgb(10, 87, 79);</td>
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>rgb(126, 13, 84);</td>
+            <td>rgb(189, 172, 216);</td>
+            <td>:rgb(46, 5, 47);</td>
+            <td>:rgb(255, 187, 0);</td>
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td> background-color:hsl(20, 100%, 50%)</td>
+            <td>hsla(241, 78%, 28%, 0.822)</td>
+            <td>hsl(295, 96%, 40%)</td>
+            <td>hsl(295, 96%, 40%)
+            </td>
+            <td>hsl(20, 100%, 50%)</td>
         </tr>
         <tr>
-            <td> rgba(0, 0, 255, 0.674);</td>
-            <td> background-color: rgba(255, 0, 93, 0.674);</td>
-            <td> background-color: rgba(24, 171, 190, 0.674);</td>
-            <td> background-color: rgba(0, 255, 229, 0.256);</td>
+            <td>rgba(0, 0, 255, 0.674);</td>
+            <td>rgba(255, 0, 93, 0.674);</td>
+            <td>rgba(24, 171, 190, 0.674);</td>
+            <td>rgba(0, 255, 229, 0.256);</td>
         </tr>
         
     </table>

@@ -1,4 +1,4 @@
 /.vscode
 /first.html
 /first.js
-/programs
+/programsgit pull origin main  # If your branch is different, replace 'main' with your branch name
