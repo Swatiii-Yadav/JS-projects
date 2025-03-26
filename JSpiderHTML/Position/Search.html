@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    nav {
+      height: 60px;
+      width: 100%;
+      /* background-color: #d0d0d0; */
+    }
+    .search {
+      height: 100%;
+      /* background-color: #a77070; */
+      width: 40%;
+      margin: auto;
+      position: relative;
+    }
+    input {
+      height: 60%;
+      width: 80%;
+      margin: auto;
+      margin-top: 10px;
+      margin-left: 50px;
+    padding-left: 30px;
+    }
+    .fa-location-dot{
+      position: absolute;
+      left: 60px;
+      top: 20px;
+    }
+    .fa-magnifying-glass{
+      position: absolute;
+      right:px;
+      top: 20px;
+      cursor: pointer;
+    }
+    i{
+      color: #898989;
+    }
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="search">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="Search Location"/>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </nav>
+</body>
+</html>
