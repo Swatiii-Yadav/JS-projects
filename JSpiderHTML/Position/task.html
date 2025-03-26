@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        height: 100vh;
+      }
+      section {
+        width: 80%;
+        height: 70%;
+        background-color: bisque;
+        margin: 100px auto;
+        position: relative;
+      }
+      div{
+        height: 100px;
+        width: 150px;
+        background-color: red;
+        border: 1px solid #c3c3c3;
+        position: absolute;
+      }
+      .div-1{
+       left: -150px;
+       top: -100px;
+      }
+      .div-2{
+       right: -150px;
+       top: -100px;
+      }
+      .div-3{
+       bottom: -100px;
+       left: -150px;
+      }
+      .div-4{
+       bottom: -100px;
+       right: -150px;
+      }
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="div-1">div-1</div>
+        <div class="div-2">div-2</div>
+        <div class="div-3">div-3</div>
+        <div class="div-4">div-4</div>
+      </section>
+
+</body>
+</html>
